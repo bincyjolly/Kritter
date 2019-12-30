@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Registration is success</title>
+    <script>
+        // //var name=document.getElementsByName("emp_name");
+        // var sname= document.forms["emp"]["emp_name"].value;
+        // var email=document.getElementsByName("email_id").innerHTML;
+        // var desig=document.getElementsByName("mydropdown").innerHTML;
+        // var loca=document.getElementsByName("mydropdown1").innerHTML;
+        // document.getElementById("name").innerHTML = sname;
+        // document.getElementById("email").innerHTML = email;
+        // document.getElementById("design").innerHTML = desig;
+        // //Document.getElementById("bodytag").innerHTML = window.location.search;
+        // document.getElementById("locat").innerHTML = loca;
+
+        function getParams(){
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                for (var i=0; i<pairs.length; i++){
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+        }
+        params = getParams();
+        sname = unescape(params["emp_name"]);
+        var email=unescape(params["email_id"]);
+        var desig=unescape(params["mydropdown"]);
+        var loca=unescape(params["mydropdown1"]);
+        document.getElementById("name").innerHTML = sname;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("design").innerHTML = desig;
+        document.getElementById("locat").innerHTML = loca;
+
+    </script>
+</head>
+<body id="bodytag">
+<fieldset>
+    <legend>Your Resgistration is Succesfull!!!. Details are : <br/></legend>
+    NAME:
+    <p id="name"></p>
+    EMAIL:
+    <p id="email"></p>
+    DESIGNATION:
+    <p id="design"></p>
+    LOCATION:
+    <p id="locat"></p>
+</fieldset>
+</body>
+</html>

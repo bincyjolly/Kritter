@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.bincy.product.dao.ProductDAOImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.187 s <<< FAILURE! - in com.bincy.product.dao.ProductDAOImplTest
+createShouldCreateProduct on createShouldCreateProduct(com.bincy.product.dao.ProductDAOImplTest)(com.bincy.product.dao.ProductDAOImplTest)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.bincy.product.dao.ProductDAOImplTest.createShouldCreateProduct(ProductDAOImplTest.java:20)
+

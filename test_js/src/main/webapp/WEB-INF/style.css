@@ -1,0 +1,15 @@
+
+body{
+    bgcolor: lemonchiffon;
+}
+div {
+      border: 100px solid black;
+    float: left;
+    align-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+}

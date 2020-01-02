@@ -1,0 +1,2 @@
+by using git clone command
+you can clone the contents of the git repository to a local machine
